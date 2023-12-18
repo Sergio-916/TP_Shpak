@@ -49,6 +49,10 @@ function App() {
 
   // add Favorites movies
   const addFavoriteMovie = (movie) => {
+    const isAlreadyAdded = favorites.some((favMovie) => favMovie.id === movie.id)
+    if (isAlreadyAdded) {
+      return;
+    }
     const newFavoritesList = [...favorites, movie]
     setFavorites(newFavoritesList);
     saveToLocalStorageFav(newFavoritesList);
@@ -62,6 +66,10 @@ function App() {
   }
   // add Watch Later
   const addWatchLaterMovie = (movie) => {
+    const  isWatchAdded = watchLater.some((watchMov) => watchMov.id === movie.id)
+if (isWatchAdded) {
+  return;
+}
     const newWatchLaterList = [...watchLater, movie]
     setWatchLater(newWatchLaterList);
     saveToLocalStorageWatch(newWatchLaterList);
