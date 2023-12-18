@@ -1,0 +1,21 @@
+
+
+.input {
+    border: 1px solid black;
+    height: 25px;
+    min-width: 200px;
+    border-radius: 3px;
+}
+.search{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 600px) {
+    .search {
+       
+        justify-content: center;
+    }
+    
+}

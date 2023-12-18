@@ -1,0 +1,15 @@
+.watch__later {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .watch__later {
+        justify-content: center;
+    }
+
+}
